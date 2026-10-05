@@ -3,6 +3,7 @@ title: "lab 3 quarto"
 format: html
 editor: visual
 ---
+
 ```{r}
 
 library(tidyverse)
@@ -48,4 +49,8 @@ ggplot(bond.data, aes(x=BJB, y=US_Adj)) +
 # Probably a spurious correlation!
 
 # 
+ggplot(bond.data, aes(x=Martinis, y=US_Adj, color=Year)) +
+    geom_point() +
+    scale_color_continuous()
+
 ```
